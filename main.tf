@@ -1,5 +1,5 @@
 locals {
-  name          = "buildah-unprivileged"
+  name          = "ocp-userspaces"
   bin_dir       = module.setup_clis.bin_dir
   yaml_dir      = "${path.cwd}/.tmp/${local.name}/chart/${local.name}"
   layer = "infrastructure"
