@@ -1,5 +1,5 @@
 apiVersion: v2
-name: buildah-unprivileged
+name: ocp-userspaces
 description: Helm chart to deploy daemonset to allow buildah to run unprivileged
 
 # A chart can be either an 'application' or a 'library' chart.

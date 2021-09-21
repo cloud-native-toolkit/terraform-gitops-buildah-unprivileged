@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$(cd $(dirname "$0"); pwd -P)
 MODULE_DIR=$(cd "${SCRIPT_DIR}/.."; pwd -P)
-CHART_DIR=$(cd "${MODULE_DIR}/chart/buildah-unprivileged"; pwd -P)
+CHART_DIR=$(cd "${MODULE_DIR}/chart/ocp-userspaces"; pwd -P)
 
 NAME="$1"
 DEST_DIR="$2"
