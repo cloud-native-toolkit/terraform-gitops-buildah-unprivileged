@@ -10,7 +10,7 @@ SERVER_NAME="default"
 TYPE="base"
 LAYER="1-infrastructure"
 
-COMPONENT_NAME="ocp-userspaces"
+COMPONENT_NAME="buildah-unprivileged"
 
 mkdir -p .testrepo
 
@@ -51,7 +51,7 @@ else
   sleep 30
 fi
 
-DAEMONSET="${NAMESPACE}-${COMPONENT_NAME}"
+DAEMONSET="${NAMESPACE}-ocp-userspaces-daemonset"
 count=0
 until kubectl get daemonset "${DAEMONSET}" -n "${NAMESPACE}" || [[ $count -eq 20 ]]; do
   echo "Waiting for daemonset/${DAEMONSET} in ${NAMESPACE}"
