@@ -61,7 +61,7 @@ done
 
 if [[ $count -eq 20 ]]; then
   echo "Timed out waiting for daemonset/${DAEMONSET} in ${NAMESPACE}"
-  kubectl get all -n "${NAMESPACE}"
+  kubectl get all,daemonset -n "${NAMESPACE}"
   exit 1
 fi
 
