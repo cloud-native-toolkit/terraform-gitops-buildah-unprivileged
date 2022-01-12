@@ -10,9 +10,13 @@ variable "ibmcloud_api_key" {
   description = "The api key for IBM Cloud access"
 }
 
-variable "region" {
+variable "server_url" {
   type        = string
-  description = "Region for VLANs defined in private_vlan_number and public_vlan_number."
+}
+
+variable "bootstrap_prefix" {
+  type = string
+  default = ""
 }
 
 variable "namespace" {
@@ -64,7 +68,7 @@ variable "git_type" {
 }
 
 variable "git_org" {
-  default = "seansund"
+  default = "cloud-native-toolkit-test"
 }
 
 variable "git_repo" {
