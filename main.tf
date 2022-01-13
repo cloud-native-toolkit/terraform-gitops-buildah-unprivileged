@@ -31,7 +31,7 @@ module "service_account" {
   namespace = var.namespace
   name = local.sa_name
   server_name = var.server_name
-  sccs = ["privileged"]
+  sccs = ["privileged","anyuid"]
 }
 
 resource null_resource create_yaml {
