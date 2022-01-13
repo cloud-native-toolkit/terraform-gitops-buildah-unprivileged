@@ -11,6 +11,10 @@ locals {
       serviceAccount = {
         name = local.sa_name
       }
+      service-account = {
+        create = false
+        sccs = []
+      }
     }
   }
 }
@@ -27,6 +31,7 @@ module "service_account" {
   namespace = var.namespace
   name = local.sa_name
   server_name = var.server_name
+  sccs = ["privileged"]
 }
 
 resource null_resource create_yaml {
