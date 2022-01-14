@@ -1,0 +1,6 @@
+dependencies:
+- name: ocp-userspaces-daemonset
+  repository: https://charts.cloudnativetoolkit.dev/
+  version: 0.1.1
+digest: sha256:c9e104e4fe2d65d3f194e9fb1fecdf31d864190927574a28e5ed23cac3c3ad68
+generated: "2021-09-21T13:50:56.919445-05:00"
