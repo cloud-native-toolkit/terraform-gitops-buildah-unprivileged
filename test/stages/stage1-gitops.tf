@@ -6,7 +6,7 @@ module "dev_tools_namespace" {
 }
 
 module "gitea" {
-  source = "./module"
+  source = "github.com/cloud-native-toolkit/terraform-tools-gitea"
 
   cluster_config_file = module.dev_cluster.config_file_path
   ca_cert             = module.dev_cluster.ca_cert
